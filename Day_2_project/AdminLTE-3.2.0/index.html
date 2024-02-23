@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Preloader -->
+    <!-- 
+       <div class="preloader flex-column justify-content-center align-items-center">
+      <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+    </div>
+     -->
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="dist/img/nstu.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">NSTU</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/nstu.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Niloy Das</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Convocation Form</p>
+                  </a>
+                </li>
+                <!--
+                <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li>
+              -->
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  About
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Notices
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  Admission
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p>Undergraduate</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <p>Graduate</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">EXAMPLES</li>
+            <li class="nav-item">
+              <a href="pages/calendar.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>
+                  Calendar
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/gallery.html" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  Gallery
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-envelope"></i>
+                <p>
+                  Mailbox
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/mailbox/mailbox.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Inbox</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/compose.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Compose</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/read-mail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Read</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Pages
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/invoice.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Invoice</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Profile</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/e-commerce.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>E-commerce</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/projects.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Projects</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-add.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Add</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-edit.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Edit</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-detail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Detail</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contacts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contacts</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/faq.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>FAQ</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contact-us.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contact us</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  Extras
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Login & Register v1
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/examples/login.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Login v1</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/register.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Register v1</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/forgot-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Forgot Password v1</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/recover-password.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Recover Password v1</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      Login & Register v2
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="pages/examples/login-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Login v2</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/register-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Register v2</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Forgot Password v2</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Recover Password v2</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-search"></i>
+                <p>
+                  Search
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/search/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Simple Search</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/search/enhanced.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Enhanced</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Noakhali Science and Technology University<br>
+                Convocation 2024 Form</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item active"><a href="#">Form Fillup</a></li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+      <!-- Main content -->
+      <!-- /.content-header -->
+      <!-- Main content -->
+      <section class="content">
+        <!-- form start -->
+        <form action="connect.php" method="POST" enctype="multipart/form-data">
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>Personal Information</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Father's Name</label>
+                      <input type="text" class="form-control" id="father_name" name="father_name"
+                        placeholder="Father's Name" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Mother's Name</label>
+                      <input type="text" class="form-control" id="mother_name" name="mother_name"
+                        placeholder="Mother's Name" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Date of Birth</label>
+                      <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" id="dob" name="dob"
+                          data-target="#reservationdate" placeholder="dd/mm/yyyy" required />
+                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <div class="col-sm-6">
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Select Gender</label>
+                      <select class="form-control" id="gender" name="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- degree info -->
+
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>Degree Information</h3>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <select id="degree-select" name="degree" class="form-control" required>
+                  <option>Select Degree</option>
+                  <option>Undergraduate</option>
+                  <option>Graduate</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="undergraduate-form" class="card card-warning">
+              <!-- Undergraduate form elements -->
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Name of degree</label>
+                  <input type="text" class="form-control" id="degree_name_undergraduate" name="degree_name"
+                    placeholder="Name of Degree">
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Admission Session</label>
+                      <input type="text" class="form-control" id="admission_session_undergraduate"
+                        name="admission_session" placeholder="Admission Session">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Reg/ID No.</label>
+                      <input type="text" class="form-control" id="reg_id_undergraduate" name="reg_id" placeholder="ID">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Batch</label>
+                      <input type="text" class="form-control" id="batch_undergraduate" name="batch" placeholder="batch">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Passing Year</label>
+                      <input type="text" class="form-control" id="passing_year_undergraduate" name="passing_year"
+                        placeholder="Passing year">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Graduating Session</label>
+                      <input type="text" class="form-control" id="graduating_session_undergraduate"
+                        name="graduating_session" placeholder="Graduating Session">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>CGPA</label>
+                      <input type="text" class="form-control" id="cgpa_undergraduate" name="cgpa" placeholder="CGPA">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="graduate-form" class="card card-warning">
+              <!-- Graduate form elements -->
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Name of degree</label>
+                  <input type="text" class="form-control" id="degree_name_graduate" name="degree_name"
+                    placeholder="Name of Degree">
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Admission Session</label>
+                      <input type="text" class="form-control" id="admission_session_graduate" name="admission_session"
+                        placeholder="Admission Session">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Reg/ID No.</label>
+                      <input type="text" class="form-control" id="reg_id_graduate" name="reg_id" placeholder="ID">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Batch</label>
+                      <input type="text" class="form-control" id="batch_graduate" name="batch" placeholder="batch">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Passing Year</label>
+                      <input type="text" class="form-control" id="passing_year_graduate" name="passing_year"
+                        placeholder="Passing year">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Graduating Session</label>
+                      <input type="text" class="form-control" id="graduating_session_graduate" name="graduating_session"
+                        placeholder="Graduating Session">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>CGPA</label>
+                      <input type="text" class="form-control" id="cgpa_graduate" name="cgpa" placeholder="CGPA">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- contact info -->
+
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>Contact Information</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="form-group">
+                <label>Permanent Address</label>
+                <input type="text" class="form-control" id="permanent_address" name="permanent_address"
+                  placeholder="Permanent Address" required>
+              </div>
+              <div class="form-group">
+                <label>Present Addres</label>
+                <input type="text" class="form-control" id="present_address" name="present_address"
+                  placeholder="Present Address" required>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Mobile Number</label>
+                    <input type="number" class="form-control" id="mobile" name="mobile"
+                      placeholder="Enter mobile number" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- present status -->
+
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>Graduate's Present Status</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Profession</label>
+                    <input type="text" class="form-control" id="profession" name="profession" placeholder="Profession">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <!-- text input -->
+                  <div class="form-group">
+                    <label>Office Address</label>
+                    <input type="text" class="form-control" id="office_address" name="office_address"
+                      placeholder="Office Address">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- payment -->
+
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>Payment</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="card card-outline card-primary collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Payement Details</h3>
+
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <ul>
+                        <li>Convocation fee: Tk. 5,000 (For Registration)</li>
+                        <li>Original Certificate fee (for undergraduate program): Tk. 1,500</li>
+                        <li>Original Certificate fee (for graduate program): Tk. 1,500</li>
+                      </ul>
+                      <strong>Note: In case of two degrees registration fee will have to be paid once
+                        only</strong>
+                    </div>
+                  </div>
+                  <div class="card ">
+                    <div class="card-header">
+                      <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                        <!-- Credit card form tabs -->
+                        <ul role="tablist" class="nav nav-pills rounded mb-3">
+                          <li class="nav-item col-lg-2">
+                            <a data-toggle="pill" href="#credit-card" class="nav-link active ">
+                              <i class="fas fa-credit-card mr-2"></i> Credit Card
+                            </a>
+                          </li>
+                          <li class="nav-item col-lg-2">
+                            <a data-toggle="pill" href="#paypal" class="nav-link ">
+                              <i class="fab fa-paypal mr-2"></i> Paypal
+                            </a>
+                          </li>
+                          <li class="nav-item col-lg-2">
+                            <a data-toggle="pill" href="#net-banking" class="nav-link ">
+                              <i class="fas fa-mobile-alt mr-2"></i> Net Banking
+                            </a>
+                          </li>
+                          <li class="nav-item col-lg-2">
+                            <a data-toggle="pill" href="#bkash" class="nav-link ">
+                              <i class="fas fa-mobile mr-2"></i> Bkash
+                            </a>
+                          </li>
+                          <li class="nav-item col-lg-2">
+                            <a data-toggle="pill" href="#nagad" class="nav-link ">
+                              <i class="fas fa-mobile mr-2"></i> Nagad
+                            </a>
+                          </li>
+                        </ul>
+                      </div> <!-- End -->
+                      <!-- Credit card form content -->
+                      <div class="tab-content">
+                        <!-- credit card info-->
+                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                          <form role="form" onsubmit="event.preventDefault()">
+                            <div class="form-group"> <label for="username">
+                                <h6>Card Owner</h6>
+                              </label> <input type="text" name="username" placeholder="Card Owner Name"
+                                class="form-control ">
+                            </div>
+                            <div class="form-group"> <label for="cardNumber">
+                                <h6>Card number</h6>
+                              </label>
+                              <div class="input-group"> <input type="text" name="cardNumber"
+                                  placeholder="Valid card number" class="form-control ">
+                                <div class="input-group-append"> <span class="input-group-text text-muted"> <i
+                                      class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i>
+                                    <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-8">
+                                <div class="form-group"> <label><span class="hidden-xs">
+                                      <h6>Expiration Date</h6>
+                                    </span></label>
+                                  <div class="input-group"> <input type="number" placeholder="MM" name=""
+                                      class="form-control">
+                                    <input type="number" placeholder="YY" name="" class="form-control">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="form-group mb-4"> <label data-toggle="tooltip"
+                                    title="Three digit CV code on the back of your card">
+                                    <h6>CVV <i class="fa fa-question-circle d-inline"></i>
+                                    </h6>
+                                  </label> <input type="text" class="form-control"> </div>
+                              </div>
+                            </div>
+                            <div class="card-footer"> <button type="button"
+                                class="subscribe btn btn-primary btn-block shadow-sm">
+                                Confirm Payment </button>
+
+                            </div>
+                        </div> <!-- End -->
+                        <!-- bKash info -->
+                        <div id="bkash" class="tab-pane fade pt-3">
+                          <h6 class="pb-2">Enter your bKash account information</h6>
+                          <div class="form-group">
+                            <label for="bkashNumber">
+                              <h6>bKash Number</h6>
+                            </label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="bkashPin">
+                              <h6>bKash Pin</h6>
+                            </label>
+                            <input type="password" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <p>
+                              <button type="button" class="btn btn-primary ">
+                                <i class="fas fa-mobile mr-2"></i> Pay with bKash
+                              </button>
+                            </p>
+                          </div>
+                          <p class="text-muted">
+                            Note: Pay fee with bKash App using following Steps:Tap "Make Payment"
+                            Icon
+                            Enter Mobile Number : 01755588618,
+                            Enter Amount: 6500/8000,
+                            Enter Reference: Reg/ID(Graduate or undergraduate any one)
+                            Enter your bKash PIN,
+                            Tap and hold to paymentTake a Screenshot of digital bill receipt.
+                          </p>
+                        </div>
+                        <!-- End -->
+                        <!-- Nagad info -->
+                        <div id="nagad" class="tab-pane fade pt-3">
+                          <h6 class="pb-2">Enter your Nagad account information</h6>
+                          <div class="form-group">
+                            <label for="nagadNumber">
+                              <h6>Nagad Number</h6>
+                            </label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="nagadPin">
+                              <h6>Nagad Pin</h6>
+                            </label>
+                            <input type="password" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <p>
+                              <button type="button" class="btn btn-primary ">
+                                <i class="fas fa-mobile mr-2"></i> Pay with Nagad
+                              </button>
+                            </p>
+                          </div>
+                          <p class="text-muted">
+                            Note: Pay fee with Nagad App using following Steps:Tap "Make Payment"
+                            Icon
+                            Enter Mobile Number : 01755588618,
+                            Enter Amount: 6500/8000,
+                            Enter Reference: Reg/ID(Graduate or undergraduate any one)
+                            Enter your Nagad PIN,
+                            Tap and hold to paymentTake a Screenshot of digital bill receipt.
+                          </p>
+                        </div>
+                        <div id="paypal" class="tab-pane fade pt-3">
+                          <h6 class="pb-2">Select your paypal account type</h6>
+                          <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio"
+                                checked>
+                              Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio"
+                                class="ml-5">International </label></div>
+                          <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i>
+                              Log
+                              into my Paypal</button> </p>
+                          <p class="text-muted"> Note: After clicking on the button, you will be
+                            directed to a
+                            secure gateway for payment. After completing the payment process, you
+                            will be
+                            redirected
+                            back to the website to view details of your order. </p>
+                        </div> <!-- End -->
+                        <!-- Paypal info -->
+                        <div id="paypal" class="tab-pane fade pt-3">
+                          <h6 class="pb-2">Select your paypal account type</h6>
+                          <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio"
+                                checked>
+                              Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio"
+                                class="ml-5">International </label></div>
+                          <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i>
+                              Log
+                              into my Paypal</button> </p>
+                          <p class="text-muted"> Note: After clicking on the button, you will be
+                            directed to a
+                            secure gateway for payment. After completing the payment process, you
+                            will be
+                            redirected
+                            back to the website to view details of your order. </p>
+                        </div> <!-- End -->
+                        <!-- bank transfer info -->
+                        <div id="net-banking" class="tab-pane fade pt-3">
+                          <div class="form-group "> <label for="Select Your Bank">
+                              <h6>Select your Bank</h6>
+                            </label> <select class="form-control" id="ccmonth">
+                              <option value="" selected disabled>--Please select your Bank--
+                              </option>
+                              <option>Sonali Bank</option>
+                              <option>Jamuna Bank</option>
+                              <option>Janata Bank</option>
+                              <option>Islami Bank</option>
+                              <option>Brac Bank</option>
+                              <option>Dutch Bangla Bank</option>
+                              <option>Rupali Bank</option>
+                            </select> </div>
+                          <div class="form-group">
+                            <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i>
+                                Proceed Payment</button> </p>
+                          </div>
+                          <p class="text-muted">Note: After clicking on the button, you will be
+                            directed to a
+                            secure
+                            gateway for payment. After completing the payment process, you will be
+                            redirected back
+                            to the website to view details of your order. </p>
+                        </div> <!-- End -->
+                        <!-- End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- others -->
+
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>Others</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card card-outline card-danger">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label>Transportation required</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" id="transportation_yes" name="transportation"
+                            required>
+                          <label class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" id="transportation_no" name="transportation"
+                            checked required>
+                          <label class="form-check-label">No</label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="col-sm-6">
+                  <div class="card card-outline card-danger">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label>Alternatives</label>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" id="alternatives_yes" name="alternatives">
+                          <label class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" id="alternatives_no" name="alternatives" checked>
+                          <label class="form-check-label">No</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- upload docs-->
+          <div class="card card-warning">
+            <div class="card-header">
+              <h3>File Upload</h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleInputFile">Passport sized photograph </label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" name="passport_photo" class="custom-file-input" id="passport_photo">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text">Upload</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleInputFile">Copy of Bank Receipt/Screenshot of bKash digital bill
+                      receipt
+                    </label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" name="bank_receipt" class="custom-file-input" id="bank_receipt">
+                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text">Upload</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- draft -->
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="is_draft" id="is_draft">
+            <label class="form-check-label" for="is_draft">
+              Save as draft
+            </label>
+          </div>
+
+          <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+
+        </form>
+      </section>
+    </div>
+  </div>
+
+
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://nstu.edu.bd">Noakhali Science and Technology
+        University</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+
+
+  <script>
+    //Date picker
+    $('#reservationdate').datetimepicker({
+      format: 'L'
+    });
+  </script>
+  <script>
+
+    $(document).ready(function () {
+      $('#degree-select').on('change', function () {
+        if ($(this).val() === 'Undergraduate') {
+          $('#undergraduate-form').show();
+          $('#graduate-form').hide();
+        } else if ($(this).val() === 'Graduate') {
+          $('#graduate-form').show();
+          $('#undergraduate-form').hide();
+        }
+        else {
+          $('#graduate-form').hide();
+          $('#undergraduate-form').hide();
+        }
+
+      });
+
+      // Show the default form when the page loads
+      $('#degree-select').trigger('change');
+    });
+  </script>
+
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script>
+    $(function () {
+      bsCustomFileInput.init();
+    });
+  </script>
+</body>
+
+</html>
