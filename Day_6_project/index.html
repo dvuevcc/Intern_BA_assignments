@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>xhr vs fetch</title>
+</head>
+
+<body>
+    <h1>xhr vs fetch</h1>
+    <h2>XHR uses <strong>callbacks</strong></h2>
+    <h2>fetch() uses Promises</h2>
+    <h2>fetch() with async/await is even easier and better (more later)</strong></h2>
+    <button id="one">Show data (XHR)</button>
+    <button id="two">Show data (Fetch)</button>
+    <button id="three">Show data (Fetch + async/await)</button>
+    <button id="four">Show data (Fetch + sync/await)</button>
+    <div id="output">Output : </div>
+    <script src="/scripts/xhr.js"></script>
+    <script src="/scripts/fetch.js"></script>
+    <script src="/scripts/async.js"></script>
+    <!-- <script src="/scripts/sync.js"></script> -->
+</body>
+
+</html>
