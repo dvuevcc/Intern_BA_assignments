@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@types/jquery.datatables": "^1.10.36"
+  }
+}
